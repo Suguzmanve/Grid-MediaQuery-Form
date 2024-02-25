@@ -1,0 +1,244 @@
+:root{
+    --azul:#1E8BC3;
+    --verde:#35BC7A;
+    --naranja:#F86924;
+    --negro: #222222;
+    --amarillo:#FF9F00;
+    --rojo:#F05A49;
+
+    --linea_01: 1px solid #000000;
+}
+body{
+    background-color: #ffffff;
+}
+.contgeneral{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.col_3{
+    margin-top: 10px;
+    flex: 3;
+    padding: 12px;
+    background-color: var(--rojo);
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.col{
+    margin-top: 10px;
+    flex: 1;
+    padding: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom: 4px solid;
+    margin-right: 20px;
+}
+
+.row2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.col2{
+    margin-right: 20px;
+}
+.col2 p{
+    color: #ffffff;
+    justify-content: center;
+    text-align: justify;
+    padding: 10px;
+}
+.col2:last-child{
+    margin-right: 0px;
+}
+.metrica{
+    font-family:'fuente1',Arial, Helvetica;
+    height: 100px;
+    margin-left: -13px;
+}
+.metrica p{
+    color: #ffffff;
+}
+.espacioimag{
+    margin-top: 15px;
+}
+
+.color_azul{
+    color: var(--azul);
+}
+.color_naranja{
+    color: var(--naranja);
+}
+.color_amarillo{
+    color: var(--amarillo);
+}
+.color_verde{
+    color: var(--verde);
+}
+.color_rojo{
+    color: var(--rojo);
+}
+
+.back_ver{
+    background-color: var(--verde);
+}
+.back_naranja{
+    background-color: var(--naranja);
+}
+.back_amarillo{
+    background-color: var(--amarillo);
+}
+footer{
+    width: 100%;
+}
+.footercontent{
+    background-color: var(--negro);
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.50rem;
+    padding-top:8px;
+    padding-bottom:10px;
+    text-align:center;
+}
+
+.logo{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+span{
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.espacio{
+    margin-top: 10px;
+}
+
+p{
+    font-family: 'letra1', Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'letra1';
+    src: url(fonts/static/OpenSans-Medium.ttf);
+}
+
+
+
+
+@media screen and (max-width: 900px){
+    .contgeneral{
+        width: 100%;
+        background-color: aliceblue;
+    }
+    .row{
+        display: block;
+        width: 100%;
+    }
+    .col-3 p{
+        width: 100%;
+        background-color: var(--rojo);
+        text-align: left;
+    }
+    .col{
+        margin-top: 0px;
+    }
+    .col p{
+        display: block;
+        text-align: left;
+        background-color: #ffffff;
+    }
+    .col.color_azul i,
+    .col.color_naranja i,
+    .col.color_amarillo i,
+    .col.color_verde i,
+    .col.color_rojo i {
+        display: none;
+    }
+    .espacioimag {
+        width: auto;
+        height: auto;
+        max-width: 97%;
+    }
+    .row2{
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    .col2{
+        display: block;
+        margin-right: 0px;
+        text-align: left;
+        margin-top: 5px;
+    }
+    .col p{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .col2 span {
+        display: none;
+      }
+    .col2:first-child{
+        margin-top: 0px;
+    }
+    p{
+        margin-left: 4px;
+    }
+}
+
+
+
+/*
+
+.linea{
+    height: 100px;
+    display: flex;
+}
+
+
+
+@font-face{
+    font-family: 'fuente1';
+    src: url(fonts/Nunito\,Protest_Riot/) format(ttf);
+}
+
+.opciones{
+    margin-left: 13px;
+    background-color: #ffffff;
+    height: 100px;
+}
+.espacioicon{
+    margin: auto;
+    width: 60px;
+    border: 1px solid #FF9F00;
+    height: 70px;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-size: 50px; 
+    margin: 10px auto 5px;  
+}
+
+
+.letra{
+    width: 80%;
+    margin-left: 15px;
+    margin-top: 3px;
+    border: 1px solid green;
+}
+
+/* 
+.menu{
+    border: var(--linea_01);
+    border-radius: 15px;
+}
+
+*/
